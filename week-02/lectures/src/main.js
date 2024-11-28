@@ -1,3 +1,6 @@
+
+
+
 console.log(document);
 console.log(document.querySelector("h2"));
 console.log(document.querySelector(".title"));
@@ -62,10 +65,10 @@ fetch("https://jsonplaceholder.typicode.com/todos")
 
 //
 
-function forEachLoop(func,  array) {
-    for(let i = 0; i < array.length; i++) {
-         return func(array[i]);
-    }
+function forEachLoop(func, array) {
+  for (let i = 0; i < array.length; i++) {
+    return func(array[i]);
+  }
 }
 
 // function handleResponse(response) {
