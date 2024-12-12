@@ -2,7 +2,7 @@
 
 function Hero() {
   return (
-    <section>
+    <section className="hero">
         <h2>Hero Section</h2>
     </section>
   )

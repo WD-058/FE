@@ -1,7 +1,7 @@
 function Section(props) {
   console.log(props);
   return (
-    <section>
+    <section className="services">
       <h2>{props.section}</h2>
     </section>
   );
