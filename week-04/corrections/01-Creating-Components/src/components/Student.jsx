@@ -1,15 +1,6 @@
-function Student({ studentData }) {
-//   console.log(props);
+import Grade from "./Grade";
 
-  //   const { studentData } = props;
-  //   const studentData = {
-  //     firstName: "Testy",
-  //     lastName: "McTest",
-  //     age: 42,
-  //     course: "Web Development",
-  //     city: "Berlin",
-  //     picture: "https://randomuser.me/api/portraits/men/1.jpg",
-  //   };
+function Student({ studentData }) {
   return (
     <div className="card">
       <div className="card-image">
@@ -25,6 +16,8 @@ function Student({ studentData }) {
         <p>{studentData.age} years old</p>
         <p>{studentData.course}</p>
         <p>{studentData.city}</p>
+        <Grade studentGpa={studentData.gpa} />
+        <p>{studentData.graduate ? "Graduate" : "Student"}</p>
       </div>
     </div>
   );
