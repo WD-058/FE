@@ -1,7 +1,8 @@
 import addToFav from "./storage.js";
 
 const renderMovieCard = (prod) => {
-  const moviesContainer = document.querySelector("#products-container");
+  const moviesContainer = document.querySelector("#movies-container");
+  console.log(prod);
   const card = document.createElement("div");
   card.id = prod.id;
   card.className = "card bg-base-100 shadow-xl";
@@ -41,7 +42,6 @@ const renderMovieCard = (prod) => {
   card.appendChild(cardActions);
 
   moviesContainer.appendChild(card);
-  
 };
 
 export { renderMovieCard };
